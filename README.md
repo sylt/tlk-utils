@@ -10,10 +10,12 @@ Basic utilities for manipulating TLK (dialogue) files used by Bioware Infinity E
 
 # Building
 
-> mkdir -p build
-> cd build
-> cmake ..
-> make
+```
+$ mkdir -p build
+$ cd build
+$ cmake ..
+$ make
+```
 
 # Utilities
 
@@ -25,7 +27,9 @@ Basic utilities for manipulating TLK (dialogue) files used by Bioware Infinity E
 
 Combining language files are as simple as running:
 
-> ./tlkcombine dialog-english.tlk dialog-spanish.tlk my-output-file.tlk
+```
+./tlkcombine dialog-english.tlk dialog-spanish.tlk my-output-file.tlk
+```
 
 This will produce the file `my-output-file.tlk` which you can copy to your game directory as `dialog.tlk`. Just make sure you have your original `dialog.tlk` file backed up. Female dialogue require the dialogf.tlk file to be present, otherwise it will fall back to the dialog.tlk file.
 
